@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html,body
+
+{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: aliceblue;
+    scroll-behavior: smooth;
+    width:100%;
+}
+nav{
+  width:100%;
+}
+.top{
+    border-bottom: 1px solid rgb(198, 196, 196) ;
+   height: 35px;
+   width: 100%;
+}
+.FB
+{
+    margin-left: 100px;
+  margin-top: 5px;
+    
+   float: left;
+   border-left: 1px solid rgb(198, 196, 196) ;
+   border-right: 1px solid rgb(198, 196, 196) ;
+   border-bottom: 3px solid green;
+   color:green;
+   padding-left:10px;
+   padding-right:10px;
+   padding-bottom: 5px;
+   box-sizing: border-box;
+   
+}
+@media screen and (max-width: 800px) {
+  .FB {
+   margin-left: 5px;
+  }
+}
+#FB_right
+{
+   float:right;
+  margin-right: 100px;
+   color: black;
+  
+   box-sizing: border-box;
+   padding-left:10px;
+   padding-right:10px;
+   margin-top: 5px;
+   padding-bottom: 5px;
+}
+@media screen and (max-width: 800px) {
+  #FB_right {
+   float:right;
+   margin-right: 20px;
+  }
+}
+#FB_right:hover{
+    color:green;
+   
+}
+.center
+{
+    height:100px;
+    width: 99.8%;
+    border: 1px solid rgb(198, 196, 196) ;
+}
+#logo
+{
+    line-height: 100px;
+    font-size: 30px;
+   margin-left: -100px;
+}
+@media screen and (max-width: 800px) {
+  #logo {
+   font-size: 27px;
+  }
+}
+ .search-container {
+    float: right;
+
+  }
+  @media screen and (max-width: 800px) {
+    .search-container {
+     margin-right: 100px;
+    }
+  }
+  
+  .center input[type=text] {
+    padding: 6px;
+    margin-top: 30px;
+    font-size: 17px;
+    border: none;
+    float: right;
+  }
+  @media screen and (max-width: 800px) {
+    .center input[ type=text] {
+     display:none;
+    }
+  }
+  
+  .center .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 30px;
+   float: right;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+
+  }
+  
+  .center .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .center .search-container {
+      float: none;
+    }
+    .center a, .center input[type=text], .center .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .center input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
+  .button {
+   
+    border-radius: 2.125rem;
+    background-color: #e41177;
+    
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    position: relative;
+    left:830px;
+    bottom:10px
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+    
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .topnav {
+  
+    background-color: green;
+    position: sticky;
+    top:1px;
+    width: 100%;
+    height:50px;
+    z-index:3;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    background-color: green;
+  }
+
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .dropdown {
+    float: left;
+    position: absolute;
+
+    z-index: 1111;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 16px;
+    background-color: green;
+    font-family: inherit;
+    margin: 0;
+    margin-left: 20px;
+    
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+  
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  position: absolute;
+
+z-index: 1111;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 3;
+    background-color: #ccc;
+    transition: all .2s ease-in-out; ;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    transition: all .2s ease-in-out; 
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+
+z-index: 1111;
+  }
+  @media screen and (max-width: 800px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  
+  ul{
+    margin-bottom:100px ;
+    
+  }
+  li
+  {
+    z-index: 599;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight:600;
+    color: #fff;
+    outline: none;
+    margin-top: 5px;
+    vertical-align: top;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .darkened-image {
+    filter: brightness(50%);
+
+    background-image: url(
+'images/banner2.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+    height: 500px;
+    width: 100%;
+    z-index: 1;
+}
+@media screen and (max-width: 800px) {
+.darkened-image {
+   height: 200px;
+  }
+ 
+}
+#dm
+{
+  text-align: center;
+  position:absolute;
+  top:500px;
+  color:white;
+  margin-left: 50px;
+}
+@media screen and (max-width: 800px) {
+  #dm {
+      font-size: 14px; 
+      margin-left: 0px; 
+      top:300px;
+  
+}}
+.WCU
+{
+    margin-top: 90px;
+}
+.WCU h1
+{
+ 
+  text-align: center;
+  color:green
+     
+}
+@media screen and (max-width: 800px) {
+  .WCU h1 {
+    
+ font-size: 23px;
+ text-align: left;
+}}
+.WCU h1:hover
+{
+    color:rgb(92, 188, 92)
+}
+.WCU .orange{
+    font-family: 'Orbitron', sans-serif;
+    color: orange;
+}
+.WCU .blue{
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(21, 111, 220);
+}
+.WCU .img
+{
+    width: 100%;
+    text-align: center;
+    
+    
+}
+.WCU .img img
+{
+    margin-left: 70px;
+    margin-right: 30px;
+}
+.one_teacher, .two_teacher, .three_teacher
+{
+    display: inline-block;
+
+  
+}
+ .three_teacher:hover
+{
+
+    
+}
+.two_teacher:hover
+{
+ 
+   
+}
+.one_teacher
+
+{
+margin-left: 60px;
+margin-right: 30px;
+   
+}
+@media screen and (max-width: 800px) {
+  .one_teacher,.three_teacher,.two_teacher {
+    
+ margin-left: -40px;
+
+}
+}
+
+
+.WCU  .banner_text
+{
+    position: absolute;
+    top:200px;
+    left:900px;
+}
+hr
+{
+color:green;
+width:100%;
+height:3px;
+background-color: green;
+}
+.white
+{
+  background-color: white;
+
+}
+@media screen and (max-width: 800px) {
+  .white {
+    
+ width:100%;
+}}
+
+.quote .double_comma
+{
+    font-size: 100px;
+}
+.quote p{
+    font-size: 50px;
+}
+@media screen and (max-width: 800px) {
+  .quote p,.quote .double_comma {
+    
+ font-size: 23px;
+ width:100%;
+ 
+}}
+.quote
+{
+    margin-top: 90px;
+    text-align: justify;
+    margin-left: 5px;
+    margin-bottom: 100px;
+    background-color: #f2f3ef;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.quote h2
+{
+    font-style: italic;
+    margin-left: 970px;
+    display: inline-block;
+}
+.quote .galileo
+{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    margin-left: 950px;
+    transition: all .2s ease-in-out; 
+}
+@media screen and (max-width: 800px) {
+  .quote .galileo,.quote h2{
+    margin-left: 200px;
+    width:100px;
+    height:100px;
+    font-size: 16px;
+    display: block;
+}}
+.galileo:hover{
+    transform: scale(1.1); 
+}
+.quote  #quote
+{
+    margin-left: 150px;
+    transition: all .2s ease-in-out; 
+    display: inline;
+} 
+@media screen and (max-width: 800px) {
+  .quote #quote{
+width:250px;
+margin-left: 30px;
+    
+ 
+}}
+#quote:hover
+{
+    transform: scale(1.1);    
+}
+.quote  #quote_2
+{
+    margin-left: 100px;
+    transition: all .2s ease-in-out; 
+    display:inline;
+} 
+@media screen and (max-width: 800px) {
+  .quote #quote_2 {
+margin-left:30px;
+width: 250px;
+height:150px
+}}
+#quote_2:hover
+{
+    transform: scale(1.1);    
+}
+.bg-grey {
+  background: rgb(19, 182, 19);
+}
+.logo-footer {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 800px) {
+  .logo-footer {
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}}
+footer {
+      color: white;
+}
+footer p, a {
+font-size: 12px;
+font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 800px) {
+footer p,a {
+font-size:9px;
+margin-left: -50px;}}
+
+footer h6 {
+font-family: 'Playfair Display', serif;
+margin-bottom: 40px;
+position: relative;
+}
+@media screen and (max-width: 800px) {
+  footer h6{
+    margin-bottom: 2px;
+    font-size: 18px;
+
+}}
+footer h6:after {
+position: absolute;
+content: "";
+background: rgb(19, 182, 19);
+width: 12%;
+height: 1px;
+left: 0;
+bottom: -20px;
+}
+@media screen and (max-width: 800px) {
+  footer h6:after {
+  left:-100px
+}}
+.btn-footer {
+           color: white;
+        
+          text-decoration: none;
+          border: 1px solid;
+          border-radius: 43px;
+          font-size: 13px;
+          padding: 7px 30px;
+          line-height: 47px;
+}
+@media screen and (max-width: 800px) {
+  .btn-footer {
+margin-left: 20px;}}
+.btn-footer:hover {
+          
+          text-decoration: none;
+         
+}
+
+.form-footer input[type="text"] {
+  border: none;
+border-radius: 16px 0 0 16px;
+outline: none;
+padding-left: 10px;
+
+}
+::placeholder {
+font-size: 10px;
+padding-left: 10px;
+font-style: italic;
+}
+.form-footer input[type="button"] {
+border: none;
+background: red;
+  margin-left: -5px;
+color: #fff;
+outline: none;
+border-radius: 0 16px 16px 0;
+padding: 2px 12px;
+}
+.social .fa {
+color: white;
+font-size: 22px;
+padding: 10px 15px;
+background:  rgb(19, 182, 19);
+
+}
+@media screen and (max-width: 800px) {
+  .social .fa {
+    margin-left: 100px;
+  }}
+footer ul li {
+list-style: none;
+display: block;
+}
+footer ul  {
+padding-left: 0;
+}
+footer ul  li a{
+text-decoration: none;
+color: white;
+text-decoration:none;
+}
+a:hover {
+text-decoration: none;
+color: #f5f5f5 !important;
+
+}
+.logo-part {
+border-right: 1px solid  rgb(19, 182, 19);
+height: 100%;
+}
+
+.fa-solid{
+
+  font-size: 18px ;
+  margin-right: 5px;
+  }
+  
+  
+  .dropbtn{
+          background-color:transparent;
+          color: white;
+        vertical-align: top;
+          width: 130px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+  padding-bottom:10px;
+  
+          /*FONTS*/
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: white;
+      font-weight:bold ;
+        
+  }
+  
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+  
+    .dropdown-content a {
+      color:green;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+  
+    .dropdown-content a:hover {
+        background-color:green;
+        transform: scale(1.1,1.1);
+        transition: 0.5s ease-in-out;
+  }
+    li:hover .dropdown-content {
+      display: block;
+    }
+    li:hover .dropbtn {
+    background-color: green;
+    transition: 1s;
+  }
+  .hidden
+  {
+    display:none;
+    margin-left: 0 auto;
+    padding: 0;
+    text-align: left;
+    background: #249a10;
+    width:100%;
+    height:50px;
+    position: sticky;
+      top: 0px;
+    color:white;
+  }
+  .back-to-top {
+    position: relative;
+    z-index: 2; 
+  }
+    .back-to-top .btn-dark {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      padding: 0;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background:rgb(76, 174, 54);
+      border-color: #2e2e2e;
+      display: none;
+      z-index: 999;
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+      .back-to-top .btn-dark:hover {
+        cursor: pointer;
+        background: green;
+        border-color: white; }
+  
+  
